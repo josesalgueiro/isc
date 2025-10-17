@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIBS.ISC", "src\SIBS.ISC\SIBS.ISC.csproj", "{3D104C50-AA25-4B95-A60E-9891EE70C885}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20E5489F-E6D8-4AB0-882E-27C1C8FDA757}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		exclusion.dic = exclusion.dic
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{46C69126-E5C2-414B-AA9B-1B6EDDDF89F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIBS.ISC.Tests", "Tests\SIBS.ISC.Tests\SIBS.ISC.Tests.csproj", "{1450636B-115A-44A0-B952-519BAF4D8F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIBS.ISC.TestsFramework", "Tests\SIBS.ISC.TestsFramework\SIBS.ISC.TestsFramework.csproj", "{7C75C11D-F12B-47F0-9156-D854A486F411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIBS.ISC.Tests.ConsoleApplication", "Tests\SIBS.ISC.Tests.ConsoleApplication\SIBS.ISC.Tests.ConsoleApplication.csproj", "{317A1304-A6A8-4015-B7CC-5484AA990E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D104C50-AA25-4B95-A60E-9891EE70C885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D104C50-AA25-4B95-A60E-9891EE70C885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D104C50-AA25-4B95-A60E-9891EE70C885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D104C50-AA25-4B95-A60E-9891EE70C885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1450636B-115A-44A0-B952-519BAF4D8F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1450636B-115A-44A0-B952-519BAF4D8F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1450636B-115A-44A0-B952-519BAF4D8F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1450636B-115A-44A0-B952-519BAF4D8F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C75C11D-F12B-47F0-9156-D854A486F411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C75C11D-F12B-47F0-9156-D854A486F411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C75C11D-F12B-47F0-9156-D854A486F411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C75C11D-F12B-47F0-9156-D854A486F411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317A1304-A6A8-4015-B7CC-5484AA990E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317A1304-A6A8-4015-B7CC-5484AA990E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317A1304-A6A8-4015-B7CC-5484AA990E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317A1304-A6A8-4015-B7CC-5484AA990E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1450636B-115A-44A0-B952-519BAF4D8F17} = {46C69126-E5C2-414B-AA9B-1B6EDDDF89F9}
+		{7C75C11D-F12B-47F0-9156-D854A486F411} = {46C69126-E5C2-414B-AA9B-1B6EDDDF89F9}
+		{317A1304-A6A8-4015-B7CC-5484AA990E5C} = {46C69126-E5C2-414B-AA9B-1B6EDDDF89F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AD7345E-A3CE-447C-9339-D8A082824263}
+	EndGlobalSection
+EndGlobal

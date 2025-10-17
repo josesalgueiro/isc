@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SignAssembly>False</SignAssembly>
+		<AssemblyOriginatorKeyFile>..\..\AssemblySigning.snk</AssemblyOriginatorKeyFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Version>1.0.11</Version>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+		<UserSecretsId>452f8ea9-0fcf-4921-8732-08044962e181</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Remove="C:\Users\luis.b.oliveira\.nuget\packages\pdfiumviewer.native.x86.v8-xfa\2018.4.8.256\Build\x86\pdfium.dll" />
+	  <Content Remove="C:\Users\luis.b.oliveira\.nuget\packages\pdfiumviewer.native.x86_64.v8-xfa\2018.4.8.256\Build\x64\pdfium.dll" />
+	  <Content Remove="x64\pdfium.dll" />
+	  <Content Remove="x86\pdfium.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="FreeImage.Standard" Version="4.3.8" />
+	  <PackageReference Include="Hueppauff.PdfiumViewer.Core" Version="1.0.19172.6" />
+	  <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
+	  <PackageReference Include="PdfiumViewer.Native.x86.v8-xfa" Version="2018.4.8.256" />
+	  <PackageReference Include="PdfiumViewer.Native.x86_64.v8-xfa" Version="2018.4.8.256" />
+	  <PackageReference Include="PdfSharpCore" Version="1.3.63" />
+	  <PackageReference Include="System.Text.Json" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="FreeImage.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="PdfiumViewer.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="x64\pdfium.dll" Pack="true" PackagePath="runtimes\win-x64\native">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="x86\pdfium.dll" Pack="true" PackagePath="runtimes\win-x86\native">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+	<!--<ItemGroup>
+		<Content Include="FreeImage.dll">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackagePath>lib\net462</PackagePath>
+		</Content>-->
+		<!--<Content Include="FreeImage.dll">
+			<Pack>true</Pack>
+			<BuildAction>None</BuildAction>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>-->
+	<!--</ItemGroup>-->
+
+</Project>
